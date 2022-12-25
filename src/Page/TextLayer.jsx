@@ -179,6 +179,8 @@ export class TextLayerInternal extends PureComponent {
               itemIndex,
               ...item,
             });
+            
+            console.log(content);
 
             child.innerHTML = content;
             index += item.str && item.hasEOL ? 2 : 1;
